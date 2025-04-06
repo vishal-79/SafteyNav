@@ -1,50 +1,123 @@
-# Welcome to your Expo app 👋
+SafetyNav 🚦
+SafetyNav is a React Native application built without Expo, designed to provide safer navigation routes by analyzing crime data and avoiding high-risk areas. This project is part of the GDSC Solutions Challenge 2025 by team Iconic 227.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Features
+Crime Data Heatmap: Dynamically rendered heatmap based on crime data from the San Francisco Government API.
 
-## Get started
+Safe Route Optimization: Calculates and visualizes the safest route between two points, avoiding high-crime areas.
 
-1. Install dependencies
+Dynamic Search: Integrated search bars for Origin and Destination using Google Places Autocomplete.
 
-   ```bash
-   npm install
-   ```
+User Location Rendering: Displays the user's real-time location on the map.
 
-2. Start the app
+Responsive UI/UX: Enhanced visuals with animations, clean design, and seamless user interaction.
 
-   ```bash
-    npx expo start
-   ```
+Dynamic Data Fetching: Fetches crime data based on the user's current location to provide localized safety analysis.
 
-In the output, you'll find options to open the app in a
+Route Safety Analysis: Compares route points against crime heatmap data and identifies risky segments.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Technologies Used
+React Native (without Expo)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Google Maps API
 
-## Get a fresh project
+Google Directions API
 
-When you're ready, run:
+Google Places Autocomplete
 
-```bash
-npm run reset-project
-```
+San Francisco Government API (for crime data)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+React Native Maps
 
-## Learn more
+TailwindCSS (for styling)
 
-To learn more about developing your project with Expo, look at the following resources:
+Getting Started
+Prerequisites
+Node.js & npm installed
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+React Native CLI
 
-## Join the community
+Android Studio / Xcode for emulator testing
 
-Join our community of developers creating universal apps.
+Installation
+Clone the repository:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+bash
+Copy
+Edit
+git clone https://github.com/YourUsername/SafetyNav.git
+Navigate to the project directory:
+
+bash
+Copy
+Edit
+cd SafetyNav
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Running the App
+Start the Metro server:
+
+bash
+Copy
+Edit
+npx react-native start
+Run the app on Android:
+
+bash
+Copy
+Edit
+npx react-native run-android
+Run the app on iOS:
+
+bash
+Copy
+Edit
+npx react-native run-ios
+Project Structure
+bash
+Copy
+Edit
+SafetyNav/
+│
+├── index.tsx              # Main entry point of the app
+├── app/                   # Contains all screens and components
+├── components/            # Reusable UI components
+├── services/              # API integration and data processing logic
+├── assets/                # Images, fonts, and other static assets
+├── utils/                 # Utility functions and helpers
+├── styles/                # Styling and Tailwind configuration
+└── README.md              # Project documentation
+To-Do List
+ Implement heatmap rendering based on crime data.
+
+ Integrate Google Maps Directions API for route calculation.
+
+ Add search bars for Origin and Destination.
+
+ Optimize route calculation to avoid high-crime areas.
+
+ Enhance UI with animations and improved visuals.
+
+ Add user notification system for high-risk alerts.
+
+ Improve performance and reduce data fetch size.
+
+ Implement real-time location tracking.
+
+ Finalize UI/UX polish.
+
+Contributions
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Authors
+Vishal - Project Lead & Developer
+Vikashini - Project Designer and UI Developer
+
+Team Iconic 227 - GDSC Solutions Challenge 2025
